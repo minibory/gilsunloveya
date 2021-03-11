@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function cl(th) {
+            var p = th.parentElement;
+            var s = p.querySelector(".o");
+            th.innerText = eval(s.innerText);
+        }
+    </script>
+</head>
+<body>
+    <h2>계산해봅시다.</h2>
+    <hr>
+    <p><span class="o">3 + 4</span> = <span onclick="cl(this)">답</span></p>
+    <p><span class="o">5 * 20 + 60</span> = <span onclick="cl(this)">답</span></p>
+    <p><span class="o">20/5 - 4 * 5</span> = <span onclick="cl(this)">답</span></p>
+</body>
+</html>

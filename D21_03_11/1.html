@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function ta() {
+            var a = document.getElementsByTagName("td");
+            
+            for(var i = 0; i < 10; i++) {
+                a[i].innerText = i;
+            }
+            for(var i = 10; i < 20; i++) {
+                a[i].innerText = (i-10)*(i-10);
+            }
+        }
+    </script>
+</head>
+<body onload="ta()">
+    <table border="1">
+        <tr>
+            <th>n</th>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+        <tr>
+            <th>n<sup>2</sup></th>
+            <td></td><td></td><td></td><td></td><td></td>
+            <td></td><td></td><td></td><td></td><td></td>
+        </tr>
+    </table>
+</body>
+</html>

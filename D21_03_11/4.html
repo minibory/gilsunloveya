@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function down(th) {
+            th.style.backgroundColor="purple";
+        }
+        function over(th) {
+            th.style.backgroundColor="yellow";
+        }
+        function out(th) {
+            th.style.backgroundColor="red";
+        }
+        function wheel(e, th) {
+            if(e.wheelDelta < 0) {
+                th.style.backgroundColor="blue";
+            }
+        }
+    </script>
+</head>
+<body>
+    <span onmousedown = "down(this)"
+    onmouseover = "over(this)"
+    onmouseout = "out(this)"
+    onwheel = "wheel(event, this)">자바스크립트</span>
+</body>
+</html>

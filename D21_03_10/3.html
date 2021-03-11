@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <h2>라면을 끓이는 순서</h2>
+    <hr>
+    <ol type="A" id="ol" onclick="this.style.backgroundColor='yellow';">
+        <li>물을 끓인다.</li>
+        <li>라면과 스프를 넣는다.</li>
+        <li>계란을 넣는다.</li>
+        <li>얌얌<b>맛있게</b> 먹는다.</li>
+    </ol>
+    <script>
+        var l = document.getElementsByTagName("li");
+        for(var i = 0; i < l.length; i++) {
+            l[i].style.color = "green";
+        }
+    </script>
+</body>
+</html>

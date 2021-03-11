@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var max = 0;
+        function th(title, price) {
+            this.title = title;
+            this.price = price;
+            
+            this.big=function() {
+                for(var i = 0; i < mart.length; i++) {
+                    if(mart[i].price > max) {
+                        max = mart[i].price;
+                    }
+                }
+                return max;
+            }
+        }
+        var mart = new Array();
+        for(var i = 0; i < 2; i++) {
+            var d = prompt("입력");
+        }
+
+    </script>
+</head>
+<body>
+    <script>
+        for(var i = 0; i < mart.length; i++) {
+            document.write(mart[i].title + "<br>");
+            document.write(mart[i].price + "<br>");
+        }
+        document.write(th.big());
+    </script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+    </script>
+</head>
+<body>
+    <script>
+        var ary=["s", 2, 3, 4, 5];
+        
+        for(var i = 0; i < ary.length; i++) {
+            if(isNaN(ary[i])) {
+                continue;
+            }
+            for(var j = 0; j < ary[i]; j++) {
+            document.write("*");
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>

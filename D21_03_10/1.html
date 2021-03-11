@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        div {
+            display: inline-block;
+            width: 50px;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var co = ['red', 'orange', 'blue', 'green', 'pink'];
+        for(var i = 0; i < co.length; i++) {
+            var str = "<div style='background-color: ";
+            str += co[i] + "'";
+            str += ">" + co[i] + "</div>";
+            document.write(str);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        var n = "visible";
+        function ch() {
+            if(n == "hidden") {
+                n = "visible";
+            } else {
+                n = "hidden";
+            }
+            var v = document.querySelector("#aa");
+                v.style.visibility = n;
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="ch();">button</button>
+    <hr>
+    <ul>
+        <li>I (<span id="aa">Love</span>) You</li>
+    </ul>
+    <script>
+
+    </script>
+</body>
+</html>

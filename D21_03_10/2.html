@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body id="Body">
+    <button onclick="ch()">배경색 바꾸기</button>
+    <script>
+        function ch() {
+            var a = document.getElementById("Body");
+            var str = ["#ff0", "#6c0", "#fcf", "#cf0", "##39f"];
+
+            var r = parseInt(Math.random() * 5);
+            a.style.backgroundColor = str[r];
+        }
+    </script>
+</body>
+</html>

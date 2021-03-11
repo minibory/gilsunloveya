@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        function cl(n) {
+            var a = document.getElementsByTagName("p");
+
+            if(n == 1) {
+                a[n-1].innerText = "서버";
+            } else if(n == 2) {
+                a[n-1].innerText = "짜장면";
+            }
+        }
+        function rm(th) {
+            th.innerText = "";
+        }
+    </script>
+</head>
+<body>
+    <h4>Q. 컴퓨터 분야 뭐가 관심있니?</h4>
+    <p onclick="rm(this)"></p>
+    <button onclick="cl(1)">답보기</button>
+    <h4>Q. 뭐 먹고싶니?</h4>
+    <p onclick="rm(this)"></p>
+    <button onclick="cl(2)">답보기</button>
+</body>
+</html>

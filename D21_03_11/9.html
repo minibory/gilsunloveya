@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        function gugu() {
+            while (true) {
+                var n = parseInt(prompt("정수입력"));
+                if (isNaN(n)) {
+                    continue;
+                } else {
+                    break;
+                }
+            }
+            for (var i = 1; i < 10; i++) {
+                document.write(n + " X " + i + " = " + n * i + "<br>");
+            }
+        }
+    </script>
+</head>
+
+<body onload="gugu()">
+
+</body>
+
+</html>
